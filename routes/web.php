@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\Auth\VerificationController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -20,11 +21,3 @@ Route::get("/", function () {
 });
 
 Auth::routes(["verify" => true]);
-
-// Route::get("/home", [HomeController::class, "index"])
-//     ->name("home")
-//     ->middleware(["verified"]);
-
-// Route::get("/chatify", function () {
-//     return view("Chatify::pages.app");
-// });

@@ -1,5 +1,13 @@
 @extends('layouts.validation')
 
+@section('title')
+    {{ __('Register') }}
+@endsection
+
+@section('desc')
+    {{ __('Before continuing, please create an account to use our translation!') }}
+@endsection
+
 @section('content')
     <form action={{ route('register') }} method="post">
         @csrf

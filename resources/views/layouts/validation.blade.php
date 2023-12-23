@@ -26,9 +26,11 @@
             </nav>
             <div class="body">
                 <div class="wrap-card">
-                    <h2 class="title">Hello Again!</h2>
-                    <p class="desc">Chào mừng quay trở lại! Tất cả thông tin của bạn đã sẵn sàng để bạn khám phá trên
-                        ứng dụng trò chuyện của chúng tôi.
+                    <h2 class="title">
+                        @yield('title')
+                    </h2>
+                    <p class="desc">
+                        @yield('desc')
                     </p>
                     <div class="body-card">
 

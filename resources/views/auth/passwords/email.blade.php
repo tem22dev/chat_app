@@ -1,5 +1,13 @@
 @extends('layouts.validation')
 
+@section('title')
+    {{ __('Reset Password') }}
+@endsection
+
+@section('desc')
+    {{ __('Please enter your email to confirm password change.') }}
+@endsection
+
 @section('content')
     @if (session('status'))
         <div class="alert alert-success" role="alert">

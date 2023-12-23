@@ -1,5 +1,13 @@
 @extends('layouts.validation')
 
+@section('title')
+    {{ __('Reset Password') }}
+@endsection
+
+@section('desc')
+    {{ __('Now you can update your password!') }}
+@endsection
+
 @section('content')
     <form action={{ route('password.update') }} method="post">
         @csrf

@@ -1,5 +1,13 @@
 @extends('layouts.validation')
 
+@section('title')
+    {{ __('Login') }}
+@endsection
+
+@section('desc')
+    {{ __('Welcome to back! All your information is ready for you to explore on our chat app.') }}
+@endsection
+
 @section('content')
     <form action={{ route('login') }} method="post">
         @csrf
