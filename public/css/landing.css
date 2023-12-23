@@ -1,0 +1,182 @@
+:root {
+  --header-height: 80px;
+}
+
+.container {
+  height: 100vh;
+  background: url("/images/background.png") center/cover no-repeat;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--header-height);
+  padding: 10px 20px;
+}
+.header .navbar-logo {
+  display: flex;
+  align-items: center;
+}
+.header .logo {
+  width: 55px;
+}
+.header .logo-heading {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-left: 10px;
+}
+@supports ((-webkit-background-clip: text) or (background-clip: text)) or (-webkit-background-clip: text) {
+  .header .logo-heading,
+  .header .register:hover {
+    color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-color: var(--primary-color);
+    background-image: var(--primary-background);
+  }
+}
+.header .navbar-action {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.header .login,
+.header .register {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--text-color);
+  text-decoration: none;
+}
+.header .login {
+  min-width: 120px;
+  min-height: 40px;
+  letter-spacing: 1.3px;
+  color: var(--white);
+  background: var(--primary-color);
+  background: var(--primary-background);
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px rgba(147, 165, 255, 0.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  position: relative;
+  padding: 12px 20px;
+}
+.header .login:hover,
+.header .login:focus {
+  color: var(--white);
+  transform: translateY(-6px);
+}
+.header .register {
+  font-weight: 700;
+  margin-right: 22px;
+}
+
+.body {
+  position: relative;
+  height: calc(100vh - var(--header-height));
+}
+.body .content {
+  position: absolute;
+  right: 6%;
+  top: 16%;
+  width: 430px;
+}
+.body .slogan {
+  font-size: 3.2rem;
+}
+.body strong {
+  color: transparent;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-color: var(--primary-color);
+  background-image: var(--primary-background);
+}
+.body .btn-start {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  background: transparent;
+  margin-top: 30px;
+  margin-left: 40px;
+}
+.body .chatify {
+  font-size: 1.7rem;
+  font-weight: 600;
+  min-width: 180px;
+  min-height: 52px;
+  letter-spacing: 1.3px;
+  color: var(--white);
+  background: var(--primary-color);
+  background: var(--primary-background);
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px rgba(147, 165, 255, 0.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  position: relative;
+  padding: 16px 20px;
+  text-decoration: none;
+}
+.body .chatify::before {
+  content: "";
+  border-radius: 1000px;
+  min-width: 237px;
+  min-height: 64px;
+  border: 3px solid var(--primary-color);
+  box-shadow: 0 0 60px rgba(147, 165, 255, 0.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.3s ease-in-out 0s;
+}
+.body .chatify:hover,
+.body .chatify:focus {
+  color: var(--white);
+  transform: translateY(-6px);
+}
+.body .chatify:hover::before,
+.body .chatify:focus::before {
+  opacity: 1;
+}
+.body .chatify::after {
+  content: "";
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  border: 6px solid var(--primary-color);
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+@keyframes ring {
+  0% {
+    width: 60px;
+    height: 60px;
+    opacity: 1;
+  }
+  100% {
+    width: 120px;
+    height: 120px;
+    opacity: 0;
+  }
+}

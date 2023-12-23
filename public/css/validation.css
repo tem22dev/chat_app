@@ -1,0 +1,231 @@
+:root {
+  --header-height: 80px;
+}
+
+#container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  padding: 20px 90px 0px;
+  margin: auto;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--header-height);
+  padding: 10px 20px;
+}
+.nav .logo {
+  width: 50px;
+}
+.nav .logo-heading {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-left: 10px;
+}
+@supports ((-webkit-background-clip: text) or (background-clip: text)) or (-webkit-background-clip: text) {
+  .nav .logo-heading {
+    color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-color: var(--primary-color);
+    background-image: var(--primary-background);
+  }
+}
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+  color: #1a162e;
+  line-height: 146.667%;
+}
+
+.desc {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 146.667%;
+  text-align: center;
+  color: #9e9da8;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  max-width: 460px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group + .form-group {
+  margin-top: 26px;
+}
+.form-error {
+  border-color: #ed4337 !important;
+}
+.form-item {
+  display: flex;
+  width: 460px;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #d2d1d6;
+  overflow: hidden;
+  background-color: rgba(158, 157, 168, 0.27);
+}
+.form-item:focus-within {
+  border-color: var(--primary-color);
+}
+.form-control {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 144.444%;
+  color: #1a162e;
+  outline: none;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  background: #fff;
+}
+.form-control::-moz-placeholder {
+  color: #d2d1d6;
+}
+.form-control::placeholder {
+  color: #d2d1d6;
+}
+.form-check-wrap {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.form-check-wrap .auth-link {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 146.667%;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+.form-check {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-right: 234px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.form-check::before, .form-check::after {
+  content: "";
+  position: absolute;
+}
+.form-check::before {
+  width: 19px;
+  height: 19px;
+  border-radius: 5px;
+  border: 1.5px solid #9e9da8;
+}
+.form-check::after {
+  width: 12px;
+  height: 5px;
+  border: 3px solid;
+  border-color: transparent transparent var(--white) var(--white);
+  rotate: -45deg;
+  top: 3px;
+  left: 2px;
+}
+.form-check-label {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 146.667%;
+  color: #9e9da8;
+  margin-left: 15px;
+}
+.form-check:has(:checked)::before {
+  background-color: #ffb700;
+  border-color: #ffb700;
+  box-shadow: 0 0 8px rgba(255, 183, 0, 0.8);
+}
+.form-check-input {
+  width: 19px;
+  height: 19px;
+  z-index: 2;
+}
+
+.icon {
+  padding: 0 12px;
+  width: 42px;
+  height: 20px;
+}
+
+.invalid-feedback {
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-align: left;
+  color: #ed4337;
+  margin-top: 8px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  width: 100%;
+}
+.btn .btn-submit {
+  color: #1a162e;
+  font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 144.444%;
+  min-width: 200px;
+  width: 100%;
+  padding: 12px 20px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background: var(--Yellow-Yellow, #ffb700);
+  cursor: pointer;
+}
+.btn .btn-submit:hover {
+  opacity: 0.8;
+}
+
+.auth-text {
+  color: #9e9da8;
+  margin-top: 80px;
+  margin-bottom: 40px;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 144.444%;
+}
+.auth-text .auth-text-link {
+  color: #0071dc;
+  font-weight: 600;
+  line-height: 144.444%;
+  text-decoration: none;
+}
+
+.img {
+  width: 50%;
+}
+.img img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}

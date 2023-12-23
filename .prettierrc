@@ -1,0 +1,14 @@
+{
+    "printWidth": 120,
+    "wrapLineLength": 120,
+    "tabWidth": 4,
+    "endOfLine": "lf",
+    "wrapAttributes": "auto",
+    "wrapAttributesMinAttrs": 4,
+    "sortTailwindcssClasses": true,
+    "sortHtmlAttributes": "none",
+    "noPhpSyntaxCheck": false,
+    "indentInnerHtml": true,
+    "extraLiners": "",
+    "trailingCommaPHP": true
+}

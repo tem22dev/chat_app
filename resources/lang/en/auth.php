@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     /*
     |--------------------------------------------------------------------------
     | Authentication Language Lines
@@ -13,8 +12,7 @@ return [
     |
     */
 
-    'failed' => 'Thông tin bạn nhập không tồn tại trong hệ thống.',
-    'password' => 'Mật khẩu được cung cấp không chính xác.',
-    'throttle' => 'Bạn quá nhiều lần thử đăng nhập. Vui lòng thử lại sau :seconds giây.',
-
+    "failed" => "Thông tin bạn nhập không tồn tại trong hệ thống.",
+    "password" => "Mật khẩu được cung cấp không chính xác.",
+    "throttle" => "Bạn quá nhiều lần thử đăng nhập. Vui lòng thử lại sau :seconds giây.",
 ];

@@ -15,10 +15,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get("/", function () {
+    return view("landing");
 });
 
-Auth::routes(['verify' => true]);
+Auth::routes(["verify" => true]);
 
-Route::get('/home', [HomeController::class, 'index'])->name('home')->middleware(['verified']);
+// Route::get("/home", [HomeController::class, "index"])
+//     ->name("home")
+//     ->middleware(["verified"]);
+
+// Route::get("/chatify", function () {
+//     return view("Chatify::pages.app");
+// });

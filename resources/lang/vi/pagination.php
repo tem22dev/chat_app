@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     /*
     |--------------------------------------------------------------------------
     | Pagination Language Lines
@@ -13,7 +12,6 @@ return [
     |
     */
 
-    'next'     => 'Trang trước &raquo;',
-    'previous' => '&laquo; Trang sau',
-
+    "next" => "Trang trước &raquo;",
+    "previous" => "&laquo; Trang sau",
 ];
