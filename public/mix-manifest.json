@@ -4,5 +4,6 @@
     "/css/common.css": "/css/common.css",
     "/css/app.css": "/css/app.css",
     "/css/validation.css": "/css/validation.css",
-    "/css/landing.css": "/css/landing.css"
+    "/css/landing.css": "/css/landing.css",
+    "/css/chatify.css": "/css/chatify.css"
 }
