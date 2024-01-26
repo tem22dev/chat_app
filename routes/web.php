@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Auth\VerificationController;
+use App\Http\Controllers\VideoCallController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -21,3 +22,6 @@ Route::get("/", function () {
 });
 
 Auth::routes(["verify" => true]);
+
+Route::get("/video-call/{recipientID}", [VideoCallController::class, "startCall"])->name("start.call");
+Route::post("/video-call/offer", [VideoCallController::class, "sendOffer"])->name("send.offer");

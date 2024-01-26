@@ -69,3 +69,12 @@
         </p>
     </form>
 @endsection
+
+@section('script')
+    <script>
+        console.log(123);
+        // document.querySelector('.logout').onClick(function() {
+        //     alert('logged out');
+        // })
+    </script>
+@endsection

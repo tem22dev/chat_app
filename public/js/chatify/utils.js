@@ -39,3 +39,7 @@ function debounce(callback, delay) {
         }, delay);
     };
 }
+
+document.querySelector(".logout").addEventListener("click", function () {
+    document.getElementById("logout-form").submit();
+});

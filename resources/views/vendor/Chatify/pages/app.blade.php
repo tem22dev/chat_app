@@ -64,11 +64,18 @@
                     </div>
                     <a href="#" class="user-name">{{ config('chatify.name') }}</a>
                 </div>
+
+                @php
+                    $recipientID = (int) request()->route('id');
+                    // Pusher::user();
+                @endphp
                 {{-- header buttons --}}
                 <nav class="m-header-right">
-                    <a href="#" class="add-to-favorite"><i class="fas fa-star"></i></a>
-                    <a href="#"><img src={{ asset('images/phone.svg') }} alt="phone"></i></a>
-                    <a href="#"><img src={{ asset('images/video.svg') }} alt="video"></i></a>
+                    <a href="" class="add-to-favorite"><i class="fas fa-star"></i></a>
+                    <a href=""><img src={{ asset('images/phone.svg') }} alt="phone"></a>
+                    <a href={{ route('start.call', ['recipientID' => $recipientID]) }}>
+                        <img src={{ asset('images/video.svg') }} alt="video">
+                    </a>
                     <a href="#" class="show-infoSide"><i class="fas fa-info-circle"></i></a>
                 </nav>
             </nav>

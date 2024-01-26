@@ -20,3 +20,16 @@
     background-image: linear-gradient(50deg, #7461d3 0%, #03d4ec 100%);
   }
 }
+
+.logout {
+  display: block;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #0d6efd;
+  border-radius: 8px;
+  margin: 10px auto 0;
+  padding: 6px 14px;
+}

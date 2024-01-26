@@ -19,4 +19,5 @@ mix.js("resources/js/app.js", "public/js")
     .sass("resources/sass/landing.scss", "public/css")
     .sass("resources/sass/validation.scss", "public/css")
     .sass("resources/sass/chatify.scss", "public/css")
+    .sass("resources/sass/call.scss", "public/css")
     .sourceMaps();
